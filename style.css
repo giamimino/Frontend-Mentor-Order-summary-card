@@ -1,0 +1,155 @@
+@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: -260px;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 320px;
+    height: 500px;
+    border-radius: 32px;
+    background-color: hsl(225, 100%, 98%);
+    box-shadow: 0 2px 2px 1px hsla(224, 23%, 55%, 0.624);
+}
+
+main .illustration-hero {
+    width: 320px;
+    height: 167px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
+.title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    text-align: center;
+    font-size: 24px;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: transparent;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    height: 362.5px;
+    padding: 25px 35px;
+}
+
+.text {
+    margin-top: 12px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.music-box-wrapper {
+    width: 100%;
+    padding: 8px;
+    height: 54px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.music-box-wrapper img {
+    width: 32px;
+    height: 32px;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.name {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 4px;
+}
+
+.price {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.BTN-positive {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 14px;
+    height: 42px;
+    border-radius: 8px;
+    color: hsl(225, 100%, 98%);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.BTN-negative {
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    height: 42px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.BTN-negative:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.BTN-positive:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+.change:hover {
+    color: hsl(224, 23%, 55%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-position-y: -200px;
+    }
+}
